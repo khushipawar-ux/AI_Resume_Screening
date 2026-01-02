@@ -1,18 +1,17 @@
 # Core dependencies
-streamlit==1.28.0
-fastapi==0.104.1
-uvicorn==0.24.0
-python-multipart==0.0.6
+streamlit
+fastapi
+uvicorn
+python-multipart
 
 # Database (PostgreSQL)
-sqlalchemy==2.0.23
-psycopg2-binary==2.9.9
-python-dotenv==1.0.0
+psycopg2-binary
+python-dotenv
 
 # Document parsing
-PyPDF2==3.0.1
-pdfplumber==0.10.3
-python-docx==1.1.0
+PyPDF2
+pdfplumber
+python-docx
 
 # NLP and ML
 transformers
@@ -25,17 +24,17 @@ pandas
 
 # LLM integrations
 google-generativeai
-requests==2.31.0
+requests
 
 # Utilities
-pydantic==2.5.2
-pydantic-settings==2.1.0
+pydantic
+pydantic-settings
 
 # Testing
-pytest==7.4.3
-pytest-cov==4.1.0
+pytest
+pytest-cov
 
 # Development
-black==23.11.0
-flake8==6.1.0
-mypy==1.7.1
+black
+flake8
+mypy

@@ -8,22 +8,22 @@ def test_candidate_ranking():
     """Test candidate ranking"""
     ranker = CandidateRanker()
     candidates = [
-        {'name': 'Alice', 'score': 85},
-        {'name': 'Bob', 'score': 92},
-        {'name': 'Charlie', 'score': 78}
+        {'name': 'Khushi', 'score': 85},
+        {'name': 'Arihant', 'score': 92},
+        {'name': 'Arshi', 'score': 78}
     ]
     ranked = ranker.rank_candidates(candidates)
-    assert ranked[0]['name'] == 'Bob'
-    assert ranked[1]['name'] == 'Alice'
-    assert ranked[2]['name'] == 'Charlie'
+    assert ranked[0]['name'] == 'Arihant'
+    assert ranked[1]['name'] == 'Khushi'
+    assert ranked[2]['name'] == 'Arshi'
 
 def test_candidate_filtering():
     """Test candidate filtering"""
     ranker = CandidateRanker()
     candidates = [
-        {'name': 'Alice', 'score': 85},
-        {'name': 'Bob', 'score': 65},
-        {'name': 'Charlie', 'score': 78}
+        {'name': 'Khushi', 'score': 85},
+        {'name': 'Arihant', 'score': 65},
+        {'name': 'Arshi', 'score': 78}
     ]
     filtered = ranker.filter_candidates(candidates, min_score=0.7)
-    assert len(filtered) == 2
+    assert len(filtered) == 3
